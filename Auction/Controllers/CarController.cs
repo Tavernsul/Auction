@@ -38,7 +38,7 @@ namespace Auction.Controllers
         public IActionResult Post([FromBody] Car car)
         {
             _carRepository.AddCar(car);
-            return CreatedAtAction(nameof(GetCarById), car);
+            return NoContent();
         }
 
         [HttpPut("{id}")]
