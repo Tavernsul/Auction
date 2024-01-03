@@ -9,7 +9,7 @@ namespace Auction
         {
 
             services.AddDbContext<AuctionDbContext>(options =>
-            options.UseInMemoryDatabase(databaseName: "YourInMemoryDb"));
+            options.UseInMemoryDatabase(databaseName: "auctionDB"));
 
             services.AddScoped<ICarRepository, CarRepository>();
 
